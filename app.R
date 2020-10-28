@@ -595,7 +595,9 @@ folder_df <- syn_tableQuery(sprintf("select name, id from %s where type = 'folde
           }
           
           folder_synID <- folders_namedList[[selected_folder]]
-          
+          validate(
+           need(length(folder_synID)==1, 'Duplicate folder names detected. Please make sure folders have distinct names.'),
+           )
           file_list <- syn_store$getFilesInStorageDataset(synStore_obj, folder_synID)
           file_namedList <- c()
           for (i in seq_along(file_list)) {
