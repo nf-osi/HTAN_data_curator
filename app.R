@@ -588,7 +588,7 @@ schema_to_display_lookup <- data.frame(schema_name, display_name)
           selected_project <- input$var
           
           project_synID <- projects_namedList[[selected_project]] ### get synID of selected project
-          folder_list <- syn_store$getStorageDatasetsInProject(synStore_obj, project_synID)
+          # folder_list <- syn_store$getStorageDatasetsInProject(synStore_obj, project_synID)
 folders_namedList <- setNames(as.list(folder_df$id), folder_df$name)
 folder_df <- syn_tableQuery(sprintf("select name, id from %s where type = 'folder' and projectId = '%s'", config$main_fileview, project_synID))$asDataFrame()
           
