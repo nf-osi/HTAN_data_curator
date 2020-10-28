@@ -42,8 +42,9 @@ Activate the `data_curator_env` environment:
 
 -------
 
-### Data Ingress Pipeline Setup (backend)
+### Schematic Setup (backend)
 
+<<<<<<< HEAD
 The next step is to install the latest release of the [Data Ingress Pipeline](https://github.com/Sage-Bionetworks/schematic) (backend) as a folder `schematic` inside the `NF_data_curator` folder and tie it together with this frontend. 
 
 To do so carry out the following steps:
@@ -53,7 +54,6 @@ To do so carry out the following steps:
     `git clone --single-branch --branch production https://github.com/nf-osi/schematic.git`
 
 This creates a folder named `schematic` inside the the `NF_data_curator folder`.
-
 
 2. Navigate into the created `schematic` directory. Install the backend (`schematic` package) within the conda virtual environment by running:
 
