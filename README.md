@@ -44,7 +44,6 @@ Activate the `data_curator_env` environment:
 
 ### Schematic Setup (backend)
 
-<<<<<<< HEAD
 The next step is to install the latest release of the [Data Ingress Pipeline](https://github.com/Sage-Bionetworks/schematic) (backend) as a folder `schematic` inside the `NF_data_curator` folder and tie it together with this frontend. 
 
 To do so carry out the following steps:
